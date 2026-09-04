@@ -1,0 +1,29 @@
+[
+    {"id": "0",
+        "data": {
+            "gender": "M",
+            "horse name": "Tokai Teio",
+            "birthday": 1970,
+            "avatar": "https://upload.wikimedia.org/wikipedia/commons/2/23/Tokai_Teio_199608.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+        },
+        "rels": {"parents": ["1","2"]}
+    },
+    {
+        "id": "1",
+        "data": {
+            "gender": "M",
+            "horse name": "Symboli Rudolf",
+            "birthday": 1970
+        },
+        "rels": {"children":["0"],"spouses":["2"]}
+    },
+    {
+        "id": "2",
+        "data": {
+            "gender": "F",
+            "horse name": "Tokai Natural",
+            "birthday": 1970
+        },
+        "rels": {"children": ["0"],"spouses":["1"]}
+    }
+]

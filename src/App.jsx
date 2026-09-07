@@ -1,78 +1,100 @@
 import React from "react";
+import * as d3 from 'd3';
 import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import './App.css';
-import horses from "./horses.json";
+import horsesDB from "./horsesDB.json";
 
 export default class FamilyTree extends React.Component {
     cont = React.createRef();
+    chart = null;
 
-    componentDidMount() {
-      if (!this.cont.current) return;
-      //create(testData())
-      create(data())
-    
-    function create(data) {
+    componentDidMount(){
+        this.setupPedigree();
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        if (prevState.avatarMode !== this.state.avatarMode){
+            this.destroyPedigree();
+            this.setupPedigree();
+        }
+    }
+
+    componentWillUnmount(){
+        this.destroyPedigree();
+    }
+
+    setupPedigree() {
+        if (!this.cont.current) return;
+        const data = this.buildDatabase()//family-chart API database data
+        
         const f3Chart = f3.createChart('#FamilyChart', data)
             .setTransitionTime(1000)
             .setCardXSpacing(250)
             .setCardYSpacing(150)
             .setSingleParentEmptyCard(true, {label: 'ADD'})
-            .setShowSiblingsOfMain(false)
+            .setShowSiblingsOfMain(true)
             .setOrientationVertical()
 
         const f3Card = f3Chart.setCardHtml()
-            .setCardDisplay([["horse name"],["birthday"]])
+            .setCardDisplay([["horse_name"],["birth_year"]])
             .setCardDim(null)
             .setMiniTree(true)
             .setStyle('imageRect')
             .setOnHoverPathToMain()
 
-        
         const f3EditTree = f3Chart.editTree()
-            .fixed(true)
-            .setFields(["horse name","birthday","avatar"])
-            .setEditFirst(true)
+            .fixed(false)
+            .setFields(["horse_name","birth_year"])
+            .setEditFirst(false)
             .setCardClickOpen(f3Card)
         
         f3EditTree.setEdit()
-
-        f3Chart.updateTree({initial: true})
         f3EditTree.open(f3Chart.getMainDatum())
         f3Chart.updateTree({initial: true})
+        this.chart = f3Chart;
+        
     }
-    
-    function data() {
-            return horses;
-        }
+
+    destroyPedigree(){
+        if (this.cont.current) this.cont.current.innerHTML = '';
+        this.chart = null
+    }
+
+    buildDatabase(){
+        return horsesDB;
     }
 
     render() {
         return (
-          <>
-            <div>
-                <h1>Ikezuki</h1>
-            </div>
-            <div className="navbtn">
-                <button>Pedigree</button>
-                <button>Umamusume Mode</button>
-                <button>About</button>
-            </div>
-            <div 
-                className="f3"
-                id="FamilyChart"
-                ref={this.cont}
-                style={{
-                    width:'100%',
-                    height:'900px',
-                    margin:'auto',
-                    backgroundColor:'rgb(163, 163, 163)',
-                    color:'#fff',
-                }}
+            <>
+                <div>
+                    <h1>Ikezuki</h1>
+                </div>
+                <div className="navbtn">
+                    <button>Pedigree</button>
+                    <button onClick={umaButton}>Umamusume Mode</button>
+                    <button>About</button>
+                </div>
+                <div 
+                    className="f3"
+                    id="FamilyChart"
+                    ref={this.cont}
+                    style={{
+                        width:'100%',
+                        height:'900px',
+                        margin:'auto',
+                        backgroundColor:'rgb(144, 143, 143)',
+                        color:'#f7f7f7',
+                    }}
                 />
-          </>
+            </>
         );
-  }
+    }
 }
 
 
+function umaButton(){
+    //alert("Switching to Uma mode...");
+    //Suppose to swap URLs for IRL horse with Umamusume characters
+}

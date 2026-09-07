@@ -1,6 +1,6 @@
 # Ikezuki
 - Currently in development
-- Aims to map the genealogy of Japanese derby horses following the wake of the hype of a certain gacha game/anime series about [horse girls](https://umamusume.com/).
+- Aims to map the genealogy of Japanese derby horses following the hype of a certain series about [horse girls](https://umamusume.com/).
     - May include Western horses too! 
 ## To-do
 - Update the main page to render family/relatives and have working interactivity
@@ -10,7 +10,7 @@
 ## Frameworks/tools used
 - JavaScript + React Compiler
 - ["family-chart" API](https://github.com/donatso/family-chart)
-- sql.js, d3, f3
+- [sql.js](https://sql.js.org/#/), d3, f3
 ## Sources used for project
 - https://www.jbis.jp
 - https://www.pedigreequery.com

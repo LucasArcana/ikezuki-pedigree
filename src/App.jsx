@@ -1,5 +1,4 @@
 import React from "react";
-import * as d3 from 'd3';
 import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import './App.css';
@@ -7,7 +6,7 @@ import horsesDB from "./horsesDB.json";
 
 export default class FamilyTree extends React.Component {
     cont = React.createRef();
-    chart = null;
+    pedigreeChart = null;
 
     componentDidMount(){
         this.setupPedigree();
@@ -52,13 +51,13 @@ export default class FamilyTree extends React.Component {
         f3EditTree.setEdit()
         f3EditTree.open(f3Chart.getMainDatum())
         f3Chart.updateTree({initial: true})
-        this.chart = f3Chart;
+        this.pedigreeChart = f3Chart;
         
     }
 
     destroyPedigree(){
         if (this.cont.current) this.cont.current.innerHTML = '';
-        this.chart = null
+        this.pedigreeChart = null
     }
 
     buildDatabase(){

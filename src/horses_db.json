@@ -10,6 +10,12 @@
       "parents": [
         "2",
         "3"
+      ],
+      "spouses": [
+        "14"
+      ],
+      "children": [
+        "13"
       ]
     }
   },
@@ -192,6 +198,36 @@
       ],
       "children": [
         "8"
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "data": {
+      "gender": "F",
+      "horse_name": "Take Maru Yurihime",
+      "birth_year": 2012
+    },
+    "rels": {
+      "parents": [
+        "1",
+        "14"
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "data": {
+      "gender": "F",
+      "horse_name": "Summer Desire",
+      "birth_year": 2006
+    },
+    "rels": {
+      "spouses": [
+        "1"
+      ],
+      "children": [
+        "13"
       ]
     }
   }

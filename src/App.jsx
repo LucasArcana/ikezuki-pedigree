@@ -53,6 +53,11 @@ export default class FamilyTree extends React.Component {
         f3Chart.updateTree({initial: true})
         this.pedigreeChart = f3Chart;
         
+        f3Chart.setPersonDropdown(
+            (d)=>`${d.data.horse_name} (${d.data.birth_year??'?'})`,
+            {placeholder:'Searching for horses...'},
+
+        )
     }
 
     destroyPedigree(){

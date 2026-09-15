@@ -146,10 +146,12 @@
     },
     "rels": {
       "spouses": [
-        "10"
+        "10",
+        "21"
       ],
       "children": [
-        "7"
+        "7",
+        "19"
       ]
     }
   },
@@ -228,6 +230,144 @@
       ],
       "children": [
         "13"
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "data": {
+      "gender": "M",
+      "horse_name": "Sakura Bakushin O",
+      "birth_year": 1989
+    },
+    "rels": {
+      "parents": [
+        "16",
+        "17"
+      ],
+      "spouses": [
+        "22"
+      ],
+      "children": [
+        "20"
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "data": {
+      "gender": "M",
+      "horse_name": "Sakura Yutaka O",
+      "birth_year": 1982
+    },
+    "rels": {
+      "spouses": [
+        "17"
+      ],
+      "children": [
+        "15"
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "data": {
+      "gender": "F",
+      "horse_name": "Sakura Hagoromo",
+      "birth_year": 1984
+    },
+    "rels": {
+      "spouses": [
+        "16"
+      ],
+      "children": [
+        "15"
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "data": {
+      "gender": "M",
+      "horse_name": "Kitasan Black",
+      "birth_year": 2012
+    },
+    "rels": {
+      "parents": [
+        "19",
+        "20"
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "data": {
+      "gender": "M",
+      "horse_name": "Black Tide",
+      "birth_year": 2001
+    },
+    "rels": {
+      "parents": [
+        "21",
+        "9"
+      ],
+      "spouses": [
+        "20"
+      ],
+      "children": [
+        "18"
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "data": {
+      "gender": "F",
+      "horse_name": "Sugar Heart",
+      "birth_year": 2005
+    },
+    "rels": {
+      "parents": [
+        "22",
+        "15"
+      ],
+      "spouses": [
+        "19"
+      ],
+      "children": [
+        "18"
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "data": {
+      "gender": "F",
+      "horse_name": "Wind in Her Hair",
+      "birth_year": 1991
+    },
+    "rels": {
+      "spouses": [
+        "9"
+      ],
+      "children": [
+        "19"
+      ]
+    }
+  },
+  {
+    "id": "22",
+    "data": {
+      "gender": "F",
+      "horse_name": "Otome Gokoro",
+      "birth_year": 1990
+    },
+    "rels": {
+      "spouses": [
+        "15"
+      ],
+      "children": [
+        "20"
       ]
     }
   }

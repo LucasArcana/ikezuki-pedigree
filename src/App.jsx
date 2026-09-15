@@ -3,10 +3,16 @@ import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import './App.css';
 import horsesDB from "./horses_db.json";
+//import avatar_irl from "./avatar_irl.json";
+//import avatar_uma from "./avatar_uma.json";
 
 export default class FamilyTree extends React.Component {
     cont = React.createRef();
     pedigreeChart = null;
+
+    state = {
+        avatarMode: 'irl',
+    };
 
     componentDidMount(){
         this.setupPedigree();

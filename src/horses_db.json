@@ -147,11 +147,15 @@
     "rels": {
       "spouses": [
         "10",
-        "21"
+        "21",
+        "24",
+        "26"
       ],
       "children": [
         "7",
-        "19"
+        "19",
+        "23",
+        "25"
       ]
     }
   },
@@ -368,6 +372,112 @@
       ],
       "children": [
         "20"
+      ]
+    }
+  },
+  {
+    "id": "23",
+    "data": {
+      "gender": "M",
+      "horse_name": "Special Week",
+      "birth_year": 1995
+    },
+    "rels": {
+      "parents": [
+        "9",
+        "24"
+      ]
+    }
+  },
+  {
+    "id": "24",
+    "data": {
+      "gender": "F",
+      "horse_name": "Campaign Girl",
+      "birth_year": 1987
+    },
+    "rels": {
+      "spouses": [
+        "9"
+      ],
+      "children": [
+        "23"
+      ]
+    }
+  },
+  {
+    "id": "25",
+    "data": {
+      "gender": "M",
+      "horse_name": "Silence Suzuka",
+      "birth_year": 1994
+    },
+    "rels": {
+      "parents": [
+        "9",
+        "26"
+      ]
+    }
+  },
+  {
+    "id": "26",
+    "data": {
+      "gender": "F",
+      "horse_name": "Wakia",
+      "birth_year": 1987
+    },
+    "rels": {
+      "spouses": [
+        "9"
+      ],
+      "children": [
+        "25"
+      ]
+    }
+  },
+  {
+    "id": "27",
+    "data": {
+      "gender": "M",
+      "horse_name": "Oguri Cap",
+      "birth_year": 1985
+    },
+    "rels": {
+      "parents": [
+        "28",
+        "29"
+      ]
+    }
+  },
+  {
+    "id": "28",
+    "data": {
+      "gender": "M",
+      "horse_name": "Dancing Cap",
+      "birth_year": 1968
+    },
+    "rels": {
+      "spouses": [
+        "29"
+      ],
+      "children": [
+        "27"
+      ]
+    }
+  },
+  {
+    "id": "29",
+    "data": {
+      "gender": "F",
+      "horse_name": "White Narubi",
+      "birth_year": 1974
+    },
+    "rels": {
+      "spouses": [
+        "28"
+      ],
+      "children": [
+        "27"
       ]
     }
   }

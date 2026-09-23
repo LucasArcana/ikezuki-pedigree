@@ -3,6 +3,7 @@ import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import './App.css';
 import horsesDB from "./horses_db.json";
+//import { useState } from "react";
 //import avatar_irl from "./avatar_irl.json";
 //import avatar_uma from "./avatar_uma.json";
 
@@ -82,9 +83,21 @@ export default class FamilyTree extends React.Component {
                     <h1>Ikezuki</h1>
                 </div>
                 <div className="navbtn">
-                    <button>Pedigree</button>
-                    <button onClick={umaButton}>Umamusume Mode</button>
-                    <button>About</button>
+                    <button
+                        type="button"
+                        onClick={togglePedigree}>
+                        Pedigree
+                    </button>
+                    <button
+                        type="button" 
+                        onClick={toggleUma}>
+                        Umamusume Mode
+                    </button>
+                    <button 
+                        type="button"
+                        onClick={toggleAbout}>
+                        About
+                    </button>
                 </div>
                 <div 
                     className="f3"
@@ -104,7 +117,36 @@ export default class FamilyTree extends React.Component {
 }
 
 
-function umaButton(){
+function togglePedigree(){
+    return (
+        <>
+            <div 
+                className="f3"
+                id="FamilyChart"
+                ref={this.cont}
+                style={{
+                    width:'100%',
+                    height:'900px',
+                    margin:'auto',
+                    backgroundColor:'rgb(144, 143, 143)',
+                    color:'#f7f7f7',
+                }}
+            />
+        </>
+    );
+}
+
+function toggleUma(){
     //alert("Switching to Uma mode...");
     //Suppose to swap URLs for IRL horse with Umamusume characters
+}
+
+function toggleAbout(){
+    return (
+        <>
+            <div>
+                
+            </div>
+        </>
+    );
 }

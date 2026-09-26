@@ -3,9 +3,6 @@ import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import './App.css';
 import horsesDB from "./horses_db.json";
-//import { useState } from "react";
-//import avatar_irl from "./avatar_irl.json";
-//import avatar_uma from "./avatar_uma.json";
 
 export default class FamilyTree extends React.Component {
     cont = React.createRef();
@@ -88,11 +85,6 @@ export default class FamilyTree extends React.Component {
                         onClick={togglePedigree}>
                         Pedigree
                     </button>
-                    <button
-                        type="button" 
-                        onClick={toggleUma}>
-                        Umamusume Mode
-                    </button>
                     <button 
                         type="button"
                         onClick={toggleAbout}>
@@ -136,10 +128,6 @@ function togglePedigree(){
     );
 }
 
-function toggleUma(){
-    //alert("Switching to Uma mode...");
-    //Suppose to swap URLs for IRL horse with Umamusume characters
-}
 
 function toggleAbout(){
     return (

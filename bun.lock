@@ -5,6 +5,7 @@
     "": {
       "name": "ikezuki_pedigree",
       "dependencies": {
+        "d3": "^7.9.0",
         "f3": "^0.0.23",
         "family-chart": "^0.9.0",
         "vue": "^3.5.42",

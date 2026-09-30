@@ -1,29 +1,16 @@
-<template>
-    <div 
-        id="FamilyChart" 
-        class="f3" 
-        style="
-            width:100%;
-            height:900px;
-            margin:auto;
-            background-color:rgb(33,33,33);
-            color:#fff;">
-        </div>
-</template>
-
-<script setup lang="tsx">
-import * as d3 from 'd3';  // npm install d3 or yarn add d3
-import * as f3 from 'family-chart';  // npm install family-chart@0.9.0 or yarn add family-chart@0.9.0
+<script lang="jsx">
+import * as d3 from 'd3';
+import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
-import {ref, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted} from "vue";
+import {ref, watch, onMounted, onUpdated, onBeforeUnmount} from "vue";
 import { VueElement } from 'vue';
+import horsesDB from "/src/horses_db.json"
      
-export class FamilyTree extends VueElement {
-    /*name: "FamilyChart",
-    mounted() {
-        create(data())
-        
-        function create(data) {
+export default class FamilyTree extends VueElement {
+    setUpPedigree(){
+        content = ref(null);
+        pedigreeChart = null;
+
         const f3Chart = f3.createChart('#FamilyChart', data)
             .setTransitionTime(1000)
             .setCardXSpacing(250)
@@ -33,7 +20,7 @@ export class FamilyTree extends VueElement {
             .setOrientationVertical()
         
         const f3Card = f3Chart.setCardHtml()
-            .setCardDisplay([["first name","last name"],["birthday"]])
+            .setCardDisplay([["horse_name"], ["birth_year"]])
             .setCardDim(null)
             .setMiniTree(true)
             .setStyle('imageRect')
@@ -42,18 +29,46 @@ export class FamilyTree extends VueElement {
         
         const f3EditTree = f3Chart.editTree()
             .fixed(true)
-            .setFields(["first name","last name","birthday","avatar"])
+            .setFields(["horse_name", "birth_year"])
             .setEditFirst(true)
             .setCardClickOpen(f3Card)
         
         f3EditTree.setEdit()
-        
-        f3Chart.updateTree({initial: true})
         f3EditTree.open(f3Chart.getMainDatum())
-        
         f3Chart.updateTree({initial: true})
-        }
+        this.pedigreeChart = f3Chart;
         
-    }*/
+        f3Chart.setPersonDropdown(
+            (d)=>`${d.data.horse_name} (${d.data.birth_year??'?'})`,
+            {placeholder:'Searching for horses...'},        
+        )
+    }
+
+    onMounted(){
+        this.setUpPedigree();
+    }
+
+    destroyPedigree(){
+        if (this.content.current)
+            this.content.current.innerHTML = '';
+            this.pedigreeChart = null;
+    }
+
+    buildDatabase(){
+        return horsesDB;
+    }
 };
 </script>
+
+<template>
+    <div 
+        id="FamilyChart" 
+        class="f3" 
+        style="
+            width:100%;
+            height:900px;
+            margin:auto;
+            background-color:rgb(144,143,143);
+            color:#f7f7f7;">
+    </div>
+</template>

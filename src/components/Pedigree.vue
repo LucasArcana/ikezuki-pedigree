@@ -1,16 +1,17 @@
-<script lang="jsx">
+<script lang="tsx">
 import * as d3 from 'd3';
 import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import {ref, watch, onMounted, onUpdated, onBeforeUnmount} from "vue";
-import { VueElement } from 'vue';
 import horsesDB from "/src/horses_db.json"
      
-export default class FamilyTree extends VueElement {
-    setUpPedigree(){
-        content = ref(null);
-        pedigreeChart = null;
+export default{
+    name: 'FamilyTree',
+    mounted() {
+        const data = return(horsesDB);
+    }
 
+    setUpPedigree(){
         const f3Chart = f3.createChart('#FamilyChart', data)
             .setTransitionTime(1000)
             .setCardXSpacing(250)
@@ -36,26 +37,11 @@ export default class FamilyTree extends VueElement {
         f3EditTree.setEdit()
         f3EditTree.open(f3Chart.getMainDatum())
         f3Chart.updateTree({initial: true})
-        this.pedigreeChart = f3Chart;
         
         f3Chart.setPersonDropdown(
-            (d)=>`${d.data.horse_name} (${d.data.birth_year??'?'})`,
+            (d:any)=>`${d.data.horse_name} (${d.data.birth_year??'?'})`,
             {placeholder:'Searching for horses...'},        
         )
-    }
-
-    onMounted(){
-        this.setUpPedigree();
-    }
-
-    destroyPedigree(){
-        if (this.content.current)
-            this.content.current.innerHTML = '';
-            this.pedigreeChart = null;
-    }
-
-    buildDatabase(){
-        return horsesDB;
     }
 };
 </script>

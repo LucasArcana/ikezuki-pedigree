@@ -473,11 +473,115 @@
       "birth_year": 1974
     },
     "rels": {
+      "parents": [
+        "30",
+        "31"
+      ],
       "spouses": [
         "28"
       ],
       "children": [
         "27"
+      ]
+    }
+  },
+  {
+    "id": "30",
+    "data": {
+      "gender": "F",
+      "horse_name": "Never Narubi",
+      "birth_year": 1969
+    },
+    "rels": {
+      "parents": [
+        "33",
+        "32"
+      ],
+      "spouses": [
+        "31"
+      ],
+      "children": [
+        "29"
+      ]
+    }
+  },
+  {
+    "id": "31",
+    "data": {
+      "gender": "M",
+      "horse_name": "Silver Shark",
+      "birth_year": 1963
+    },
+    "rels": {
+      "spouses": [
+        "30"
+      ],
+      "children": [
+        "29"
+      ]
+    }
+  },
+  {
+    "id": "32",
+    "data": {
+      "gender": "F",
+      "horse_name": "Senju",
+      "birth_year": 1963
+    },
+    "rels": {
+      "spouses": [
+        "33"
+      ],
+      "children": [
+        "30"
+      ]
+    }
+  },
+  {
+    "id": "33",
+    "data": {
+      "gender": "M",
+      "horse_name": "Never Beat",
+      "birth_year": 1960
+    },
+    "rels": {
+      "spouses": [
+        "32",
+        "34"
+      ],
+      "children": [
+        "30",
+        "35"
+      ]
+    }
+  },
+  {
+    "id": "34",
+    "data": {
+      "gender": "F",
+      "horse_name": "Star Highness",
+      "birth_year": 1964
+    },
+    "rels": {
+      "spouses": [
+        "33"
+      ],
+      "children": [
+        "35"
+      ]
+    }
+  },
+  {
+    "id": "35",
+    "data": {
+      "gender": "F",
+      "horse_name": "Angelica",
+      "birth_year": 1970
+    },
+    "rels": {
+      "parents": [
+        "33",
+        "34"
       ]
     }
   }

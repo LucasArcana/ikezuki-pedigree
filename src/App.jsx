@@ -7,10 +7,7 @@ import horsesDB from "./horses_db.json";
 export default class FamilyTree extends React.Component {
     cont = React.createRef();
     pedigreeChart = null;
-
-    state = {
-        avatarMode: 'irl',
-    };
+    state = {avatarMode: 'irl'};
 
     componentDidMount(){
         this.setupPedigree();
@@ -65,8 +62,9 @@ export default class FamilyTree extends React.Component {
     }
 
     destroyPedigree(){
-        if (this.cont.current) this.cont.current.innerHTML = '';
-        this.pedigreeChart = null
+        if (this.cont.current) 
+            this.cont.current.innerHTML = '';
+            this.pedigreeChart = null;
     }
 
     buildDatabase(){

@@ -1,7 +1,6 @@
 import React from "react";
 import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
-import './App.css';
 import horsesDB from "./horses_db.json";
 
 export default class FamilyTree extends React.Component {

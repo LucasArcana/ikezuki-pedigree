@@ -1,9 +1,9 @@
-<script lang="tsx">
+<script lang="ts">
 import * as d3 from 'd3';
 import * as f3 from 'family-chart';
 import 'family-chart/styles/family-chart.css';
 import {ref, watch, onMounted, onUpdated, onBeforeUnmount} from "vue";
-import horsesDB from "/src/horses_db.json"
+import horsesDB from "../horses_db.json"
      
 export default{
     name: 'FamilyTree',
@@ -11,39 +11,42 @@ export default{
         const data = return(horsesDB);
     }
 
-    setUpPedigree(){
-        const f3Chart = f3.createChart('#FamilyChart', data)
-            .setTransitionTime(1000)
-            .setCardXSpacing(250)
-            .setCardYSpacing(150)
-            .setSingleParentEmptyCard(true, {label: 'ADD'})
-            .setShowSiblingsOfMain(false)
-            .setOrientationVertical()
-        
-        const f3Card = f3Chart.setCardHtml()
-            .setCardDisplay([["horse_name"], ["birth_year"]])
-            .setCardDim(null)
-            .setMiniTree(true)
-            .setStyle('imageRect')
-            .setOnHoverPathToMain()
-        
-        
-        const f3EditTree = f3Chart.editTree()
-            .fixed(true)
-            .setFields(["horse_name", "birth_year"])
-            .setEditFirst(true)
-            .setCardClickOpen(f3Card)
-        
-        f3EditTree.setEdit()
-        f3EditTree.open(f3Chart.getMainDatum())
-        f3Chart.updateTree({initial: true})
-        
-        f3Chart.setPersonDropdown(
-            (d:any)=>`${d.data.horse_name} (${d.data.birth_year??'?'})`,
-            {placeholder:'Searching for horses...'},        
-        )
-    }
+    
 };
+function setUpPedigree(data: any){
+    const f3Chart = f3
+        .createChart('#FamilyChart', data)
+        .setTransitionTime(1000)
+        .setCardXSpacing(250)
+        .setCardYSpacing(150)
+        .setSingleParentEmptyCard(true, {label: 'ADD'})
+        .setShowSiblingsOfMain(false)
+        .setOrientationVertical()
+    
+    const f3Card = f3Chart
+        .setCardHtml()
+        .setCardDisplay([["horse_name"], ["birth_year"]])
+        .setCardDim({})
+        .setMiniTree(true)
+        .setStyle('imageRect')
+        .setOnHoverPathToMain()
+    
+    
+    const f3EditTree = f3Chart.editTree()
+        .fixed(true)
+        .setFields(["horse_name", "birth_year"])
+        .setEditFirst(true)
+        .setCardClickOpen(f3Card)
+    
+    f3EditTree.setEdit()
+    f3EditTree.open(f3Chart.getMainDatum())
+    f3Chart.updateTree({initial: true})
+    
+    f3Chart.setPersonDropdown(
+        (d:any)=>`${d.data.horse_name} (${d.data.birth_year??'?'})`,
+        {placeholder:'Searching for horses...'},        
+    )
+}
 </script>
 
 <template>

@@ -6,7 +6,7 @@ import { read } from 'node:fs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DB_PATH = path.join(__dirname, '../src/db/ikezuki_db.sqlite');
-const OUT_PATH = path.join(__dirname, '../src/horses_db.json');
+const OUT_PATH = path.join(__dirname, '../src/db/horses_db.json');
 const WASM_PATH = path.join(__dirname, '../node_modules/sql.js/dist/sql-wasm.wasm');
 
 function fetchAll(dbQueried, sql){

@@ -265,6 +265,10 @@
       "birth_year": 1982
     },
     "rels": {
+      "parents": [
+        "40",
+        "35"
+      ],
       "spouses": [
         "17"
       ],
@@ -514,10 +518,12 @@
     },
     "rels": {
       "spouses": [
-        "30"
+        "30",
+        "37"
       ],
       "children": [
-        "29"
+        "29",
+        "36"
       ]
     }
   },
@@ -582,6 +588,152 @@
       "parents": [
         "33",
         "34"
+      ],
+      "spouses": [
+        "40"
+      ],
+      "children": [
+        "16"
+      ]
+    }
+  },
+  {
+    "id": "36",
+    "data": {
+      "gender": "F",
+      "horse_name": "Grey Tosho",
+      "birth_year": 1974
+    },
+    "rels": {
+      "parents": [
+        "37",
+        "31"
+      ],
+      "spouses": [
+        "39"
+      ],
+      "children": [
+        "38"
+      ]
+    }
+  },
+  {
+    "id": "37",
+    "data": {
+      "gender": "F",
+      "horse_name": "Rose Tosho",
+      "birth_year": 1965
+    },
+    "rels": {
+      "spouses": [
+        "31"
+      ],
+      "children": [
+        "36"
+      ]
+    }
+  },
+  {
+    "id": "38",
+    "data": {
+      "gender": "F",
+      "horse_name": "Athena Tosho",
+      "birth_year": 1981
+    },
+    "rels": {
+      "parents": [
+        "39",
+        "36"
+      ],
+      "spouses": [
+        "43"
+      ],
+      "children": [
+        "42"
+      ]
+    }
+  },
+  {
+    "id": "39",
+    "data": {
+      "gender": "M",
+      "horse_name": "Tosho Boy",
+      "birth_year": 1973
+    },
+    "rels": {
+      "parents": [
+        "40",
+        "41"
+      ],
+      "spouses": [
+        "36"
+      ],
+      "children": [
+        "38"
+      ]
+    }
+  },
+  {
+    "id": "40",
+    "data": {
+      "gender": "M",
+      "horse_name": "Tesco Boy",
+      "birth_year": 1963
+    },
+    "rels": {
+      "spouses": [
+        "41",
+        "35"
+      ],
+      "children": [
+        "39",
+        "16"
+      ]
+    }
+  },
+  {
+    "id": "41",
+    "data": {
+      "gender": "F",
+      "horse_name": "Social Butterfly",
+      "birth_year": 1957
+    },
+    "rels": {
+      "spouses": [
+        "40"
+      ],
+      "children": [
+        "39"
+      ]
+    }
+  },
+  {
+    "id": "42",
+    "data": {
+      "gender": "M",
+      "horse_name": "Matikanefukukitaru",
+      "birth_year": 1994
+    },
+    "rels": {
+      "parents": [
+        "43",
+        "38"
+      ]
+    }
+  },
+  {
+    "id": "43",
+    "data": {
+      "gender": "M",
+      "horse_name": "Crystal Glitters",
+      "birth_year": 1980
+    },
+    "rels": {
+      "spouses": [
+        "38"
+      ],
+      "children": [
+        "42"
       ]
     }
   }

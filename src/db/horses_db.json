@@ -683,11 +683,13 @@
     "rels": {
       "spouses": [
         "41",
-        "35"
+        "35",
+        "44"
       ],
       "children": [
         "39",
-        "16"
+        "16",
+        "45"
       ]
     }
   },
@@ -734,6 +736,172 @@
       ],
       "children": [
         "42"
+      ]
+    }
+  },
+  {
+    "id": "44",
+    "data": {
+      "gender": "F",
+      "horse_name": "Star Roch",
+      "birth_year": 1957
+    },
+    "rels": {
+      "spouses": [
+        "40"
+      ],
+      "children": [
+        "45"
+      ]
+    }
+  },
+  {
+    "id": "45",
+    "data": {
+      "gender": "F",
+      "horse_name": "Roch Tesco",
+      "birth_year": 1975
+    },
+    "rels": {
+      "parents": [
+        "40",
+        "44"
+      ],
+      "spouses": [
+        "47"
+      ],
+      "children": [
+        "46"
+      ]
+    }
+  },
+  {
+    "id": "46",
+    "data": {
+      "gender": "F",
+      "horse_name": "Powerful Lady",
+      "birth_year": 1981
+    },
+    "rels": {
+      "parents": [
+        "45",
+        "47"
+      ],
+      "spouses": [
+        "49"
+      ],
+      "children": [
+        "48"
+      ]
+    }
+  },
+  {
+    "id": "47",
+    "data": {
+      "gender": "M",
+      "horse_name": "Maruzensky",
+      "birth_year": 1974
+    },
+    "rels": {
+      "spouses": [
+        "45"
+      ],
+      "children": [
+        "46"
+      ]
+    }
+  },
+  {
+    "id": "48",
+    "data": {
+      "gender": "M",
+      "horse_name": "Winning Ticket",
+      "birth_year": 1990
+    },
+    "rels": {
+      "parents": [
+        "46",
+        "49"
+      ]
+    }
+  },
+  {
+    "id": "49",
+    "data": {
+      "gender": "M",
+      "horse_name": "Tony Bin",
+      "birth_year": 1983
+    },
+    "rels": {
+      "spouses": [
+        "46",
+        "51",
+        "53"
+      ],
+      "children": [
+        "48",
+        "50",
+        "52"
+      ]
+    }
+  },
+  {
+    "id": "50",
+    "data": {
+      "gender": "F",
+      "horse_name": "Air Groove",
+      "birth_year": 1993
+    },
+    "rels": {
+      "parents": [
+        "49",
+        "51"
+      ]
+    }
+  },
+  {
+    "id": "51",
+    "data": {
+      "gender": "F",
+      "horse_name": "Dyna Carle",
+      "birth_year": 1980
+    },
+    "rels": {
+      "spouses": [
+        "49"
+      ],
+      "children": [
+        "50"
+      ]
+    }
+  },
+  {
+    "id": "52",
+    "data": {
+      "gender": "M",
+      "horse_name": "Sakura Chitose O",
+      "birth_year": 1990
+    },
+    "rels": {
+      "parents": [
+        "49",
+        "53"
+      ]
+    }
+  },
+  {
+    "id": "53",
+    "data": {
+      "gender": "F",
+      "horse_name": "Sakura Clare",
+      "birth_year": 1982
+    },
+    "rels": {
+      "spouses": [
+        "49"
+      ],
+      "children": [
+        "52"
       ]
     }
   }

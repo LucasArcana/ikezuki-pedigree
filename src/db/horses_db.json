@@ -1,908 +1,642 @@
 [
-  {
-    "id": "1",
-    "data": {
-      "gender": "M",
-      "horse_name": "Tokai Teio",
-      "birth_year": 1988
+    {
+        "id": "1",
+        "data": {
+            "gender": "M",
+            "horse_name": "Tokai Teio",
+            "birth_year": 1988
+        },
+        "rels": {
+            "parents": ["2", "3"],
+            "spouses": ["14"],
+            "children": ["13"]
+        }
     },
-    "rels": {
-      "parents": [
-        "2",
-        "3"
-      ],
-      "spouses": [
-        "14"
-      ],
-      "children": [
-        "13"
-      ]
-    }
-  },
-  {
-    "id": "2",
-    "data": {
-      "gender": "M",
-      "horse_name": "Symboli Rudolf",
-      "birth_year": 1981
+    {
+        "id": "2",
+        "data": {
+            "gender": "M",
+            "horse_name": "Symboli Rudolf",
+            "birth_year": 1981
+        },
+        "rels": {
+            "spouses": ["3", "4"],
+            "children": ["1", "5"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "3",
-        "4"
-      ],
-      "children": [
-        "1",
-        "5"
-      ]
-    }
-  },
-  {
-    "id": "3",
-    "data": {
-      "gender": "F",
-      "horse_name": "Tokai Natural",
-      "birth_year": 1982
+    {
+        "id": "3",
+        "data": {
+            "gender": "F",
+            "horse_name": "Tokai Natural",
+            "birth_year": 1982
+        },
+        "rels": {
+            "spouses": ["2"],
+            "children": ["1"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "2"
-      ],
-      "children": [
-        "1"
-      ]
-    }
-  },
-  {
-    "id": "4",
-    "data": {
-      "gender": "F",
-      "horse_name": "Sweet Cielo",
-      "birth_year": 1987
+    {
+        "id": "4",
+        "data": {
+            "gender": "F",
+            "horse_name": "Sweet Cielo",
+            "birth_year": 1987
+        },
+        "rels": {
+            "spouses": ["2"],
+            "children": ["5"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "2"
-      ],
-      "children": [
-        "5"
-      ]
-    }
-  },
-  {
-    "id": "5",
-    "data": {
-      "gender": "M",
-      "horse_name": "Tsurumaru Tsuyoshi",
-      "birth_year": 1995
+    {
+        "id": "5",
+        "data": {
+            "gender": "M",
+            "horse_name": "Tsurumaru Tsuyoshi",
+            "birth_year": 1995
+        },
+        "rels": {
+            "parents": ["2", "4"]
+        }
     },
-    "rels": {
-      "parents": [
-        "2",
-        "4"
-      ]
-    }
-  },
-  {
-    "id": "6",
-    "data": {
-      "gender": "M",
-      "horse_name": "Gold Ship",
-      "birth_year": 2009
+    {
+        "id": "6",
+        "data": {
+            "gender": "M",
+            "horse_name": "Gold Ship",
+            "birth_year": 2009
+        },
+        "rels": {
+            "parents": ["7", "8"]
+        }
     },
-    "rels": {
-      "parents": [
-        "7",
-        "8"
-      ]
-    }
-  },
-  {
-    "id": "7",
-    "data": {
-      "gender": "M",
-      "horse_name": "Stay Gold",
-      "birth_year": 1994
+    {
+        "id": "7",
+        "data": {
+            "gender": "M",
+            "horse_name": "Stay Gold",
+            "birth_year": 1994
+        },
+        "rels": {
+            "parents": ["9", "10"],
+            "spouses": ["8"],
+            "children": ["6"]
+        }
     },
-    "rels": {
-      "parents": [
-        "9",
-        "10"
-      ],
-      "spouses": [
-        "8"
-      ],
-      "children": [
-        "6"
-      ]
-    }
-  },
-  {
-    "id": "8",
-    "data": {
-      "gender": "F",
-      "horse_name": "Point Flag",
-      "birth_year": 1998
+    {
+        "id": "8",
+        "data": {
+            "gender": "F",
+            "horse_name": "Point Flag",
+            "birth_year": 1998
+        },
+        "rels": {
+            "parents": ["11", "12"],
+            "spouses": ["7"],
+            "children": ["6"]
+        }
     },
-    "rels": {
-      "parents": [
-        "11",
-        "12"
-      ],
-      "spouses": [
-        "7"
-      ],
-      "children": [
-        "6"
-      ]
-    }
-  },
-  {
-    "id": "9",
-    "data": {
-      "gender": "M",
-      "horse_name": "Sunday Silence",
-      "birth_year": 1986
+    {
+        "id": "9",
+        "data": {
+            "gender": "M",
+            "horse_name": "Sunday Silence",
+            "birth_year": 1986
+        },
+        "rels": {
+            "spouses": ["10", "21", "24", "26"],
+            "children": ["7", "19", "23", "25"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "10",
-        "21",
-        "24",
-        "26"
-      ],
-      "children": [
-        "7",
-        "19",
-        "23",
-        "25"
-      ]
-    }
-  },
-  {
-    "id": "10",
-    "data": {
-      "gender": "F",
-      "horse_name": "Golden Sash",
-      "birth_year": 1988
+    {
+        "id": "10",
+        "data": {
+            "gender": "F",
+            "horse_name": "Golden Sash",
+            "birth_year": 1988
+        },
+        "rels": {
+            "spouses": ["9"],
+            "children": ["7"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "9"
-      ],
-      "children": [
-        "7"
-      ]
-    }
-  },
-  {
-    "id": "11",
-    "data": {
-      "gender": "M",
-      "horse_name": "Mejiro McQueen",
-      "birth_year": 1987
+    {
+        "id": "11",
+        "data": {
+            "gender": "M",
+            "horse_name": "Mejiro McQueen",
+            "birth_year": 1987
+        },
+        "rels": {
+            "spouses": ["12"],
+            "children": ["8"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "12"
-      ],
-      "children": [
-        "8"
-      ]
-    }
-  },
-  {
-    "id": "12",
-    "data": {
-      "gender": "F",
-      "horse_name": "Pastoralism",
-      "birth_year": 1987
+    {
+        "id": "12",
+        "data": {
+            "gender": "F",
+            "horse_name": "Pastoralism",
+            "birth_year": 1987
+        },
+        "rels": {
+            "spouses": ["11"],
+            "children": ["8"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "11"
-      ],
-      "children": [
-        "8"
-      ]
-    }
-  },
-  {
-    "id": "13",
-    "data": {
-      "gender": "F",
-      "horse_name": "Take Maru Yurihime",
-      "birth_year": 2012
+    {
+        "id": "13",
+        "data": {
+            "gender": "F",
+            "horse_name": "Take Maru Yurihime",
+            "birth_year": 2012
+        },
+        "rels": {
+            "parents": ["1", "14"]
+        }
     },
-    "rels": {
-      "parents": [
-        "1",
-        "14"
-      ]
-    }
-  },
-  {
-    "id": "14",
-    "data": {
-      "gender": "F",
-      "horse_name": "Summer Desire",
-      "birth_year": 2006
+    {
+        "id": "14",
+        "data": {
+            "gender": "F",
+            "horse_name": "Summer Desire",
+            "birth_year": 2006
+        },
+        "rels": {
+            "spouses": ["1"],
+            "children": ["13"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "1"
-      ],
-      "children": [
-        "13"
-      ]
-    }
-  },
-  {
-    "id": "15",
-    "data": {
-      "gender": "M",
-      "horse_name": "Sakura Bakushin O",
-      "birth_year": 1989
+    {
+        "id": "15",
+        "data": {
+            "gender": "M",
+            "horse_name": "Sakura Bakushin O",
+            "birth_year": 1989
+        },
+        "rels": {
+            "parents": ["16", "17"],
+            "spouses": ["22"],
+            "children": ["20"]
+        }
     },
-    "rels": {
-      "parents": [
-        "16",
-        "17"
-      ],
-      "spouses": [
-        "22"
-      ],
-      "children": [
-        "20"
-      ]
-    }
-  },
-  {
-    "id": "16",
-    "data": {
-      "gender": "M",
-      "horse_name": "Sakura Yutaka O",
-      "birth_year": 1982
+    {
+        "id": "16",
+        "data": {
+            "gender": "M",
+            "horse_name": "Sakura Yutaka O",
+            "birth_year": 1982
+        },
+        "rels": {
+            "parents": ["40", "35"],
+            "spouses": ["17"],
+            "children": ["15"]
+        }
     },
-    "rels": {
-      "parents": [
-        "40",
-        "35"
-      ],
-      "spouses": [
-        "17"
-      ],
-      "children": [
-        "15"
-      ]
-    }
-  },
-  {
-    "id": "17",
-    "data": {
-      "gender": "F",
-      "horse_name": "Sakura Hagoromo",
-      "birth_year": 1984
+    {
+        "id": "17",
+        "data": {
+            "gender": "F",
+            "horse_name": "Sakura Hagoromo",
+            "birth_year": 1984
+        },
+        "rels": {
+            "spouses": ["16"],
+            "children": ["15"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "16"
-      ],
-      "children": [
-        "15"
-      ]
-    }
-  },
-  {
-    "id": "18",
-    "data": {
-      "gender": "M",
-      "horse_name": "Kitasan Black",
-      "birth_year": 2012
+    {
+        "id": "18",
+        "data": {
+            "gender": "M",
+            "horse_name": "Kitasan Black",
+            "birth_year": 2012
+        },
+        "rels": {
+            "parents": ["19", "20"]
+        }
     },
-    "rels": {
-      "parents": [
-        "19",
-        "20"
-      ]
-    }
-  },
-  {
-    "id": "19",
-    "data": {
-      "gender": "M",
-      "horse_name": "Black Tide",
-      "birth_year": 2001
+    {
+        "id": "19",
+        "data": {
+            "gender": "M",
+            "horse_name": "Black Tide",
+            "birth_year": 2001
+        },
+        "rels": {
+            "parents": ["21", "9"],
+            "spouses": ["20"],
+            "children": ["18"]
+        }
     },
-    "rels": {
-      "parents": [
-        "21",
-        "9"
-      ],
-      "spouses": [
-        "20"
-      ],
-      "children": [
-        "18"
-      ]
-    }
-  },
-  {
-    "id": "20",
-    "data": {
-      "gender": "F",
-      "horse_name": "Sugar Heart",
-      "birth_year": 2005
+    {
+        "id": "20",
+        "data": {
+            "gender": "F",
+            "horse_name": "Sugar Heart",
+            "birth_year": 2005
+        },
+        "rels": {
+            "parents": ["22", "15"],
+            "spouses": ["19"],
+            "children": ["18"]
+        }
     },
-    "rels": {
-      "parents": [
-        "22",
-        "15"
-      ],
-      "spouses": [
-        "19"
-      ],
-      "children": [
-        "18"
-      ]
-    }
-  },
-  {
-    "id": "21",
-    "data": {
-      "gender": "F",
-      "horse_name": "Wind in Her Hair",
-      "birth_year": 1991
+    {
+        "id": "21",
+        "data": {
+            "gender": "F",
+            "horse_name": "Wind in Her Hair",
+            "birth_year": 1991
+        },
+        "rels": {
+            "spouses": ["9"],
+            "children": ["19"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "9"
-      ],
-      "children": [
-        "19"
-      ]
-    }
-  },
-  {
-    "id": "22",
-    "data": {
-      "gender": "F",
-      "horse_name": "Otome Gokoro",
-      "birth_year": 1990
+    {
+        "id": "22",
+        "data": {
+            "gender": "F",
+            "horse_name": "Otome Gokoro",
+            "birth_year": 1990
+        },
+        "rels": {
+            "spouses": ["15"],
+            "children": ["20"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "15"
-      ],
-      "children": [
-        "20"
-      ]
-    }
-  },
-  {
-    "id": "23",
-    "data": {
-      "gender": "M",
-      "horse_name": "Special Week",
-      "birth_year": 1995
+    {
+        "id": "23",
+        "data": {
+            "gender": "M",
+            "horse_name": "Special Week",
+            "birth_year": 1995
+        },
+        "rels": {
+            "parents": ["9", "24"]
+        }
     },
-    "rels": {
-      "parents": [
-        "9",
-        "24"
-      ]
-    }
-  },
-  {
-    "id": "24",
-    "data": {
-      "gender": "F",
-      "horse_name": "Campaign Girl",
-      "birth_year": 1987
+    {
+        "id": "24",
+        "data": {
+            "gender": "F",
+            "horse_name": "Campaign Girl",
+            "birth_year": 1987
+        },
+        "rels": {
+            "spouses": ["9"],
+            "children": ["23"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "9"
-      ],
-      "children": [
-        "23"
-      ]
-    }
-  },
-  {
-    "id": "25",
-    "data": {
-      "gender": "M",
-      "horse_name": "Silence Suzuka",
-      "birth_year": 1994
+    {
+        "id": "25",
+        "data": {
+            "gender": "M",
+            "horse_name": "Silence Suzuka",
+            "birth_year": 1994
+        },
+        "rels": {
+            "parents": ["9", "26"]
+        }
     },
-    "rels": {
-      "parents": [
-        "9",
-        "26"
-      ]
-    }
-  },
-  {
-    "id": "26",
-    "data": {
-      "gender": "F",
-      "horse_name": "Wakia",
-      "birth_year": 1987
+    {
+        "id": "26",
+        "data": {
+            "gender": "F",
+            "horse_name": "Wakia",
+            "birth_year": 1987
+        },
+        "rels": {
+            "spouses": ["9"],
+            "children": ["25"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "9"
-      ],
-      "children": [
-        "25"
-      ]
-    }
-  },
-  {
-    "id": "27",
-    "data": {
-      "gender": "M",
-      "horse_name": "Oguri Cap",
-      "birth_year": 1985
+    {
+        "id": "27",
+        "data": {
+            "gender": "M",
+            "horse_name": "Oguri Cap",
+            "birth_year": 1985
+        },
+        "rels": {
+            "parents": ["28", "29"]
+        }
     },
-    "rels": {
-      "parents": [
-        "28",
-        "29"
-      ]
-    }
-  },
-  {
-    "id": "28",
-    "data": {
-      "gender": "M",
-      "horse_name": "Dancing Cap",
-      "birth_year": 1968
+    {
+        "id": "28",
+        "data": {
+            "gender": "M",
+            "horse_name": "Dancing Cap",
+            "birth_year": 1968
+        },
+        "rels": {
+            "spouses": ["29"],
+            "children": ["27"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "29"
-      ],
-      "children": [
-        "27"
-      ]
-    }
-  },
-  {
-    "id": "29",
-    "data": {
-      "gender": "F",
-      "horse_name": "White Narubi",
-      "birth_year": 1974
+    {
+        "id": "29",
+        "data": {
+            "gender": "F",
+            "horse_name": "White Narubi",
+            "birth_year": 1974
+        },
+        "rels": {
+            "parents": ["30", "31"],
+            "spouses": ["28"],
+            "children": ["27"]
+        }
     },
-    "rels": {
-      "parents": [
-        "30",
-        "31"
-      ],
-      "spouses": [
-        "28"
-      ],
-      "children": [
-        "27"
-      ]
-    }
-  },
-  {
-    "id": "30",
-    "data": {
-      "gender": "F",
-      "horse_name": "Never Narubi",
-      "birth_year": 1969
+    {
+        "id": "30",
+        "data": {
+            "gender": "F",
+            "horse_name": "Never Narubi",
+            "birth_year": 1969
+        },
+        "rels": {
+            "parents": ["33", "32"],
+            "spouses": ["31"],
+            "children": ["29"]
+        }
     },
-    "rels": {
-      "parents": [
-        "33",
-        "32"
-      ],
-      "spouses": [
-        "31"
-      ],
-      "children": [
-        "29"
-      ]
-    }
-  },
-  {
-    "id": "31",
-    "data": {
-      "gender": "M",
-      "horse_name": "Silver Shark",
-      "birth_year": 1963
+    {
+        "id": "31",
+        "data": {
+            "gender": "M",
+            "horse_name": "Silver Shark",
+            "birth_year": 1963
+        },
+        "rels": {
+            "spouses": ["30", "37"],
+            "children": ["29", "36"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "30",
-        "37"
-      ],
-      "children": [
-        "29",
-        "36"
-      ]
-    }
-  },
-  {
-    "id": "32",
-    "data": {
-      "gender": "F",
-      "horse_name": "Senju",
-      "birth_year": 1963
+    {
+        "id": "32",
+        "data": {
+            "gender": "F",
+            "horse_name": "Senju",
+            "birth_year": 1963
+        },
+        "rels": {
+            "spouses": ["33"],
+            "children": ["30"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "33"
-      ],
-      "children": [
-        "30"
-      ]
-    }
-  },
-  {
-    "id": "33",
-    "data": {
-      "gender": "M",
-      "horse_name": "Never Beat",
-      "birth_year": 1960
+    {
+        "id": "33",
+        "data": {
+            "gender": "M",
+            "horse_name": "Never Beat",
+            "birth_year": 1960
+        },
+        "rels": {
+            "spouses": ["32", "34"],
+            "children": ["30", "35"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "32",
-        "34"
-      ],
-      "children": [
-        "30",
-        "35"
-      ]
-    }
-  },
-  {
-    "id": "34",
-    "data": {
-      "gender": "F",
-      "horse_name": "Star Highness",
-      "birth_year": 1964
+    {
+        "id": "34",
+        "data": {
+            "gender": "F",
+            "horse_name": "Star Highness",
+            "birth_year": 1964
+        },
+        "rels": {
+            "spouses": ["33"],
+            "children": ["35"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "33"
-      ],
-      "children": [
-        "35"
-      ]
-    }
-  },
-  {
-    "id": "35",
-    "data": {
-      "gender": "F",
-      "horse_name": "Angelica",
-      "birth_year": 1970
+    {
+        "id": "35",
+        "data": {
+            "gender": "F",
+            "horse_name": "Angelica",
+            "birth_year": 1970
+        },
+        "rels": {
+            "parents": ["33", "34"],
+            "spouses": ["40"],
+            "children": ["16"]
+        }
     },
-    "rels": {
-      "parents": [
-        "33",
-        "34"
-      ],
-      "spouses": [
-        "40"
-      ],
-      "children": [
-        "16"
-      ]
-    }
-  },
-  {
-    "id": "36",
-    "data": {
-      "gender": "F",
-      "horse_name": "Grey Tosho",
-      "birth_year": 1974
+    {
+        "id": "36",
+        "data": {
+            "gender": "F",
+            "horse_name": "Grey Tosho",
+            "birth_year": 1974
+        },
+        "rels": {
+            "parents": ["37", "31"],
+            "spouses": ["39"],
+            "children": ["38"]
+        }
     },
-    "rels": {
-      "parents": [
-        "37",
-        "31"
-      ],
-      "spouses": [
-        "39"
-      ],
-      "children": [
-        "38"
-      ]
-    }
-  },
-  {
-    "id": "37",
-    "data": {
-      "gender": "F",
-      "horse_name": "Rose Tosho",
-      "birth_year": 1965
+    {
+        "id": "37",
+        "data": {
+            "gender": "F",
+            "horse_name": "Rose Tosho",
+            "birth_year": 1965
+        },
+        "rels": {
+            "spouses": ["31"],
+            "children": ["36"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "31"
-      ],
-      "children": [
-        "36"
-      ]
-    }
-  },
-  {
-    "id": "38",
-    "data": {
-      "gender": "F",
-      "horse_name": "Athena Tosho",
-      "birth_year": 1981
+    {
+        "id": "38",
+        "data": {
+            "gender": "F",
+            "horse_name": "Athena Tosho",
+            "birth_year": 1981
+        },
+        "rels": {
+            "parents": ["39", "36"],
+            "spouses": ["43"],
+            "children": ["42"]
+        }
     },
-    "rels": {
-      "parents": [
-        "39",
-        "36"
-      ],
-      "spouses": [
-        "43"
-      ],
-      "children": [
-        "42"
-      ]
-    }
-  },
-  {
-    "id": "39",
-    "data": {
-      "gender": "M",
-      "horse_name": "Tosho Boy",
-      "birth_year": 1973
+    {
+        "id": "39",
+        "data": {
+            "gender": "M",
+            "horse_name": "Tosho Boy",
+            "birth_year": 1973
+        },
+        "rels": {
+            "parents": ["40", "41"],
+            "spouses": ["36"],
+            "children": ["38"]
+        }
     },
-    "rels": {
-      "parents": [
-        "40",
-        "41"
-      ],
-      "spouses": [
-        "36"
-      ],
-      "children": [
-        "38"
-      ]
-    }
-  },
-  {
-    "id": "40",
-    "data": {
-      "gender": "M",
-      "horse_name": "Tesco Boy",
-      "birth_year": 1963
+    {
+        "id": "40",
+        "data": {
+            "gender": "M",
+            "horse_name": "Tesco Boy",
+            "birth_year": 1963
+        },
+        "rels": {
+            "spouses": ["41", "35", "44"],
+            "children": ["39", "16", "45"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "41",
-        "35",
-        "44"
-      ],
-      "children": [
-        "39",
-        "16",
-        "45"
-      ]
-    }
-  },
-  {
-    "id": "41",
-    "data": {
-      "gender": "F",
-      "horse_name": "Social Butterfly",
-      "birth_year": 1957
+    {
+        "id": "41",
+        "data": {
+            "gender": "F",
+            "horse_name": "Social Butterfly",
+            "birth_year": 1957
+        },
+        "rels": {
+            "spouses": ["40"],
+            "children": ["39"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "40"
-      ],
-      "children": [
-        "39"
-      ]
-    }
-  },
-  {
-    "id": "42",
-    "data": {
-      "gender": "M",
-      "horse_name": "Matikanefukukitaru",
-      "birth_year": 1994
+    {
+        "id": "42",
+        "data": {
+            "gender": "M",
+            "horse_name": "Matikanefukukitaru",
+            "birth_year": 1994
+        },
+        "rels": {
+            "parents": ["43", "38"]
+        }
     },
-    "rels": {
-      "parents": [
-        "43",
-        "38"
-      ]
-    }
-  },
-  {
-    "id": "43",
-    "data": {
-      "gender": "M",
-      "horse_name": "Crystal Glitters",
-      "birth_year": 1980
+    {
+        "id": "43",
+        "data": {
+            "gender": "M",
+            "horse_name": "Crystal Glitters",
+            "birth_year": 1980
+        },
+        "rels": {
+            "spouses": ["38"],
+            "children": ["42"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "38"
-      ],
-      "children": [
-        "42"
-      ]
-    }
-  },
-  {
-    "id": "44",
-    "data": {
-      "gender": "F",
-      "horse_name": "Star Roch",
-      "birth_year": 1957
+    {
+        "id": "44",
+        "data": {
+            "gender": "F",
+            "horse_name": "Star Roch",
+            "birth_year": 1957
+        },
+        "rels": {
+            "spouses": ["40"],
+            "children": ["45"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "40"
-      ],
-      "children": [
-        "45"
-      ]
-    }
-  },
-  {
-    "id": "45",
-    "data": {
-      "gender": "F",
-      "horse_name": "Roch Tesco",
-      "birth_year": 1975
+    {
+        "id": "45",
+        "data": {
+            "gender": "F",
+            "horse_name": "Roch Tesco",
+            "birth_year": 1975
+        },
+        "rels": {
+            "parents": ["40", "44"],
+            "spouses": ["47"],
+            "children": ["46"]
+        }
     },
-    "rels": {
-      "parents": [
-        "40",
-        "44"
-      ],
-      "spouses": [
-        "47"
-      ],
-      "children": [
-        "46"
-      ]
-    }
-  },
-  {
-    "id": "46",
-    "data": {
-      "gender": "F",
-      "horse_name": "Powerful Lady",
-      "birth_year": 1981
+    {
+        "id": "46",
+        "data": {
+            "gender": "F",
+            "horse_name": "Powerful Lady",
+            "birth_year": 1981
+        },
+        "rels": {
+            "parents": ["45", "47"],
+            "spouses": ["49"],
+            "children": ["48"]
+        }
     },
-    "rels": {
-      "parents": [
-        "45",
-        "47"
-      ],
-      "spouses": [
-        "49"
-      ],
-      "children": [
-        "48"
-      ]
-    }
-  },
-  {
-    "id": "47",
-    "data": {
-      "gender": "M",
-      "horse_name": "Maruzensky",
-      "birth_year": 1974
+    {
+        "id": "47",
+        "data": {
+            "gender": "M",
+            "horse_name": "Maruzensky",
+            "birth_year": 1974
+        },
+        "rels": {
+            "spouses": ["45"],
+            "children": ["46"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "45"
-      ],
-      "children": [
-        "46"
-      ]
-    }
-  },
-  {
-    "id": "48",
-    "data": {
-      "gender": "M",
-      "horse_name": "Winning Ticket",
-      "birth_year": 1990
+    {
+        "id": "48",
+        "data": {
+            "gender": "M",
+            "horse_name": "Winning Ticket",
+            "birth_year": 1990
+        },
+        "rels": {
+            "parents": ["46", "49"]
+        }
     },
-    "rels": {
-      "parents": [
-        "46",
-        "49"
-      ]
-    }
-  },
-  {
-    "id": "49",
-    "data": {
-      "gender": "M",
-      "horse_name": "Tony Bin",
-      "birth_year": 1983
+    {
+        "id": "49",
+        "data": {
+            "gender": "M",
+            "horse_name": "Tony Bin",
+            "birth_year": 1983
+        },
+        "rels": {
+            "spouses": ["46", "51", "53"],
+            "children": ["48", "50", "52"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "46",
-        "51",
-        "53"
-      ],
-      "children": [
-        "48",
-        "50",
-        "52"
-      ]
-    }
-  },
-  {
-    "id": "50",
-    "data": {
-      "gender": "F",
-      "horse_name": "Air Groove",
-      "birth_year": 1993
+    {
+        "id": "50",
+        "data": {
+            "gender": "F",
+            "horse_name": "Air Groove",
+            "birth_year": 1993
+        },
+        "rels": {
+            "parents": ["49", "51"]
+        }
     },
-    "rels": {
-      "parents": [
-        "49",
-        "51"
-      ]
-    }
-  },
-  {
-    "id": "51",
-    "data": {
-      "gender": "F",
-      "horse_name": "Dyna Carle",
-      "birth_year": 1980
+    {
+        "id": "51",
+        "data": {
+            "gender": "F",
+            "horse_name": "Dyna Carle",
+            "birth_year": 1980
+        },
+        "rels": {
+            "spouses": ["49"],
+            "children": ["50"]
+        }
     },
-    "rels": {
-      "spouses": [
-        "49"
-      ],
-      "children": [
-        "50"
-      ]
-    }
-  },
-  {
-    "id": "52",
-    "data": {
-      "gender": "M",
-      "horse_name": "Sakura Chitose O",
-      "birth_year": 1990
+    {
+        "id": "52",
+        "data": {
+            "gender": "M",
+            "horse_name": "Sakura Chitose O",
+            "birth_year": 1990
+        },
+        "rels": {
+            "parents": ["49", "53"]
+        }
     },
-    "rels": {
-      "parents": [
-        "49",
-        "53"
-      ]
+    {
+        "id": "53",
+        "data": {
+            "gender": "F",
+            "horse_name": "Sakura Clare",
+            "birth_year": 1982
+        },
+        "rels": {
+            "spouses": ["49"],
+            "children": ["52"]
+        }
     }
-  },
-  {
-    "id": "53",
-    "data": {
-      "gender": "F",
-      "horse_name": "Sakura Clare",
-      "birth_year": 1982
-    },
-    "rels": {
-      "spouses": [
-        "49"
-      ],
-      "children": [
-        "52"
-      ]
-    }
-  }
 ]
